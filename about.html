@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>УСО "Логишинский дом милосердия"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="3.png">
+</head>
+<body>
+    <header>
+        <!-- <div class="container">
+            <a href="index.html"><img src="3.png" alt="logo"></a>
+            <h1 style="font-size: 30px;">УСО «Логишинский дом милосердия»</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="staff.html">Персонал</a></li>
+                </ul>
+            </nav>
+        </div> -->
+        <div class="navbar">
+            <a href="index.html"><img src="3.png" alt="logo"></a>
+            <a href="index.html">Главная</a>
+            <div class="dropdown">
+                <button class="dropbtn">Меню
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="about.html">О нас</a>
+                    <a href="services.html">Услуги</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="staff.html">Персонал</a>
+                    <a href="history.html">История</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+            <h2 style="font-family: 'Rosarium', serif">О нас</h2>
+                <p>УСО "Логишинский дом милосердия" — это учреждение социального обслуживания, предоставляющее комплексные услуги по уходу и поддержке людей, нуждающихся в помощи. Наш дом милосердия был основан с целью обеспечить качественную помощь и создать комфортные условия для наших подопечных.</p>
+                <p>Мы гордимся нашей профессиональной командой, которая состоит из медиков, социальных работников и психологов. Все наши сотрудники имеют высокую квалификацию и богатый опыт работы в сфере социального обслуживания.</p>
+                <p>Наши основные принципы работы:</p>
+                <ul>
+                    <li><strong>Забота:</strong> мы обеспечиваем качественный уход и внимание каждому подопечному.</li>
+                    <li><strong>Профессионализм:</strong> наш персонал постоянно совершенствует свои навыки и знания.</li>
+                    <li><strong>Доброжелательность:</strong> мы создаем теплую и дружелюбную атмосферу в нашем доме.</li>
+                    <li><strong>Доступность:</strong> наши услуги ориентированы на разные категории граждан, нуждающихся в поддержке.</li>
+                </ul>
+                <p>УСО "Логишинский дом милосердия" стремится создать все условия для комфортного проживания и полноценного участия наших подопечных в жизни общества. Мы рады приветствовать вас и готовы оказать всю необходимую помощь и поддержку.</p>
+                
+                <h2 style="font-family: 'Rosarium', serif">Фотогалерея</h2>
+
+                <div class="gallery-grid">
+                    <img src="4.jpg" alt="Image 4" class="thumbnail" data-full="4.jpg">
+                    <img src="5.jpg" alt="Image 5" class="thumbnail" data-full="5.jpg">
+                    <img src="6.jpg" alt="Image 6" class="thumbnail" data-full="6.jpg">
+                    <img src="7.jpg" alt="Image 7" class="thumbnail" data-full="7.jpg">
+                    <img src="8.jpg" alt="Image 8" class="thumbnail" data-full="8.jpg">
+                </div>
+
+                <div class="modal" id="modal">
+                    <span class="close">&times;</span>
+
+                    <span class="prev">&#10094;</span>
+                    <img class="modal-content" id="modal-img">
+                    <span class="next">&#10095;</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Адрес: г.п. Логишин, ул. Томилова, 15</p>
+            <p>Контактный номер: +375 (16) 531-47-29</p>
+            <p>&copy; 2024 УСО "Логишинский дом милосердия". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const modal = document.getElementById("modal");
+        const modalImg = document.getElementById("modal-img");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+        const closeModal = document.querySelector(".close");
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener("click", function() {
+                modal.style.display = "block";
+                modalImg.src = this.getAttribute("data-full");
+            });
+        });
+
+        closeModal.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+        });
+    </script> -->
+    <script src="gallery.js"></script>
+
+
+</body>
+</html>
+
+
